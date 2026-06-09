@@ -1,0 +1,194 @@
+.sharif-license-wrap .sharif-info-box {
+    background: #f0f0f1;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin: 16px 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 700px;
+}
+
+.sharif-info-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.sharif-info-box code {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-size: 13px;
+    user-select: all;
+    letter-spacing: 0.5px;
+    direction: ltr;
+}
+
+/* Form error box */
+.sharif-form-error {
+    background: #fcf0f1;
+    border: 1px solid #d63638;
+    border-right: 4px solid #d63638;
+    color: #8a2122;
+    padding: 8px 12px;
+    border-radius: 3px;
+    margin: 8px 0;
+}
+
+/* Jalali date selects */
+.sharif-date-selects select {
+    margin-left: 4px;
+    min-width: 80px;
+}
+
+/* Loading spinner inside buttons */
+.sharif-spinner {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-top-color: #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+    animation: sharif-spin 0.6s linear infinite;
+}
+
+@keyframes sharif-spin {
+    to { transform: rotate(360deg); }
+}
+
+.sharif-license-form {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 8px 16px 16px;
+    margin-bottom: 28px;
+    max-width: 700px;
+}
+
+/* IP field rows */
+.sharif-ip-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sharif-ip-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sharif-ip-row input {
+    flex: 1;
+    max-width: 260px;
+}
+
+.sharif-remove-ip-btn {
+    color: #b32d2e !important;
+    border-color: #b32d2e !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    padding: 3px 8px !important;
+}
+
+/* License table */
+.sharif-licenses-table code {
+    font-size: 12px;
+    background: #f6f7f7;
+    padding: 2px 6px;
+    border-radius: 3px;
+    word-break: break-all;
+}
+
+.sharif-ip-badge {
+    display: inline-block;
+    background: #e8f0fe;
+    color: #1a4296;
+    border: 1px solid #b6cdf7;
+    border-radius: 3px;
+    padding: 1px 6px;
+    font-size: 12px;
+    margin: 2px 2px 2px 0;
+    font-family: monospace;
+}
+
+.sharif-licenses-table .button-link-delete {
+    color: #b32d2e;
+}
+
+.sharif-licenses-table .button-link-delete:hover {
+    color: #8a2122;
+}
+
+.sharif-licenses-table .sharif-edit-btn {
+    margin-left: 4px;
+}
+
+/* Edit modal */
+.sharif-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px 16px;
+    overflow-y: auto;
+}
+
+.sharif-modal-overlay.is-open {
+    display: flex;
+}
+
+.sharif-modal {
+    background: #fff;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 720px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: sharif-modal-in 0.15s ease-out;
+}
+
+@keyframes sharif-modal-in {
+    from { transform: translateY(-12px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+}
+
+.sharif-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.sharif-modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.sharif-modal-close {
+    background: none;
+    border: none;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+    color: #646970;
+}
+
+.sharif-modal-close:hover {
+    color: #d63638;
+}
+
+.sharif-modal-body {
+    border: none !important;
+    margin-bottom: 0 !important;
+    max-width: none !important;
+    padding: 4px 20px 16px !important;
+}
