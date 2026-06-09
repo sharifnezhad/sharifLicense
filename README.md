@@ -136,14 +136,3 @@ sharif-license/
 | license_id | INT | Related license ID |
 | ip | TEXT | IP address (AES encrypted) |
 
----
-
-## 🌐 Adding a New Language
-
-Copy `lang/fa.php`, translate the strings (e.g. `lang/en.php`), and adjust the load path in `helper.php`.
-
----
-
-## 👤 Author
-
-**Amir Hossein Sharifnezhad** — [sharifdev.ir](https://sharifdev.ir)
