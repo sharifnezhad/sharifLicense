@@ -8,12 +8,9 @@ This plugin lets you create licenses for any software, plugin, theme, or WHMCS m
 
 ## ✨ Features
 
-- Create, edit, and delete licenses from the WordPress admin panel (AJAX, no page reload)
-- `license_key`, `domain`, and `ip` are encrypted with AES-256
+- Create, edit, and delete licenses from the WordPress admin panel
 - Each domain is **unique**; a license can have **multiple IPs**, and each IP can be registered only once across the whole system
 - Expiry date is entered and displayed in the **Jalali (Shamsi)** calendar (year/month/day pickers) and stored as **Gregorian**
-- Secure endpoint protected by the `X-Secret-Key` header
-- All strings are centralized in a language file (`lang/fa.php`)
 
 ---
 
